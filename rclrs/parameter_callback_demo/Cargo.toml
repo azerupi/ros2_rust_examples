@@ -1,0 +1,20 @@
+[package]
+name = "examples_rclrs_parameter_callback_demo"
+version = "0.5.0"
+edition = "2021"
+
+[[bin]]
+name = "parameter_validation"
+path = "src/parameter_validation.rs"
+
+[[bin]]
+name = "parameter_change_notification"
+path = "src/parameter_change_notification.rs"
+
+[[bin]]
+name = "parameter_async_subscription"
+path = "src/parameter_async_subscription.rs"
+
+[dependencies]
+rclrs = "0.7"
+tokio = { version = "1", features = ["rt-multi-thread", "time", "macros"] }
